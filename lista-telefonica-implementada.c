@@ -63,7 +63,7 @@ void adicionarContato() {
 
     if (contatoExistente) {
 
-        printf("Contato já existe. Atualizando número.\n");
+        printf("O contato já existe. Atualizando número!\n");
         strcpy(contatoExistente->telefone, telefone);
 
         return;
@@ -79,7 +79,7 @@ void adicionarContato() {
     novo->proximo = tabelaHash[indice];
     tabelaHash[indice] = novo;
 
-    printf("Contato adicionado com sucesso.\n");
+    printf("Contato adicionado!\n");
 
 }
 
@@ -127,7 +127,7 @@ void buscarContato() {
 
     } else {
 
-        printf("Contato não encontrado.\n");
+        printf("Contato não encontrado!\n");
 
     }
 }
@@ -160,7 +160,7 @@ void removerContato() {
             }
 
             free(atual);
-            printf("Contato removido com sucesso.\n");
+            printf("Contato removido!\n");
 
             return;
 
@@ -171,7 +171,7 @@ void removerContato() {
 
     }
 
-    printf("Contato não encontrado.\n");
+    printf("Contato não encontrado!\n");
 
 }
 
